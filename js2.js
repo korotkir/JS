@@ -1,5 +1,5 @@
 // Часть 2
-// Числа + Bigint
+// Урок 4. Числа + Bigint
 
 const sum = 42 // integer
 const sum2 = 42.42 // float
@@ -65,3 +65,133 @@ console.log(Math.ceil(4.9)) // В большую сторону
 console.log(Math.round(4.9)) // Округление к близжайшему целому
 console.log(Math.trunc(4.9)) // Удаляет дробную часть
 console.log(Math.random()) // Random
+
+// Урок 5. Строки.
+
+const name = 'Кирилл'
+const age = 18
+const output = 'Привет, меня зовут ' + name + ', мой возраст ' + age + ' года.'
+console.log(output)
+// Но лучше так:
+const newOutput = `Привет, меня зовут ${name}, мой возраст ${age}.`
+console.log(newOutput)
+
+//
+console.log(name.length) // Сколько символов в строчке? - 6
+console.log(name.toUpperCase()) // Приводим все символы к верхнему регистру
+console.log(name.toLowerCase()) // Приводим все символы к нижнему регистру
+console.log(name.charAt(2)) // Достаем один символ по индексу
+console.log(name.indexOf('илл')) // Есть ли в переменной эта строка? Выдает индекс с которого все начинается
+console.log(name.startsWith('Кир')) // стартует ли строчка с букв 'Кир' - true. Сначала можно изменить регистр (toUpperCase)
+console.log(name.endsWith('илл')) // заканчивается ли строчка с 'илл' - true
+console.log(name.repeat(3)) // Повторяет строчку трижди (без пробелов)
+const string = '    password     '
+console.log(string.trim()) // Удаляет все пробелы
+console.log(string.trimLeft()) // Удаляет пробелы слева
+console.log(string.trimRight()) // Удаляет пробелы справа
+
+//
+// Что еще пристутствует в новом синтактсе?
+function logPerson(s, name, age) {
+    if (age < 0) {
+        age = 'Еще не родился'
+    }
+    return `${s[0]}${name}${s[1]}${age}${s[2]}`
+}
+const personName = 'Кирилл'
+const personAge = 22
+const personName2 = 'Григорий'
+const personAge2 = '-10'
+const personOutput = logPerson`Имя: ${personName}, Возраст: ${personAge}`
+const personOutput2 = logPerson`Имя: ${personName2}, Возраст: ${personAge2}`
+console.log(personOutput)
+console.log(personOutput2)
+
+
+
+// Урок 6. Функции.
+
+// Существует несколько способов создания функций:
+
+// 1.Function Declaration
+function greet(name) {
+    console.log('Привет -', name)
+}
+greet('Лена')
+
+// 2. Function Expression
+const greet2 = function greet2(name) {
+    console.log('Привет 2 -', name)
+}
+greet2('Аркадий')
+
+//
+console.log(typeof greet)
+console.log(typeof greet2)
+console.dir(greet)
+console.dir(greet2)
+//
+
+//Анонимные функции
+// let counter = 0
+// const interval = setInterval(function () {
+//     if (counter === 5) {
+//         clearInterval(interval)
+//     } else {
+//         console.log(++counter)
+//     }
+// },1000)
+
+
+// Стрелочные функции =>
+// Существенно упрощает работу с функциями
+// 1
+const arrow = (name) => {
+    console.log('Привет - ', name)
+}
+arrow('Кирилл')
+
+// 2
+// Если функция принимает один аргуемент и выводит return, можно сократить и убрать скобки
+const pow2 = num => num ** 2 // Оператр перевода в степень, не обязательно использовать Math.pow
+console.log(pow2(5))
+
+
+// Параметры по умолчанию
+// Если b не указано, то используется параметр по умолчанию, в данном случае b == 1
+const summa = (a, b = 1) => a + b
+console.log(summa(41))
+
+// Что делать если функция должна принимать неограниченное количетсво чисел?
+function sumAll(...all) {
+    console.log(all)
+}
+sumAll(1,2,3,4,5) // all передает все введенные числа в массив
+
+// Как суммировать все введенные числа?
+function sumAll2(...all) {
+    let result = 0
+    for (let num of all) {
+        result += num
+    }
+    return result
+}
+
+const res = sumAll2(1,2,3,4,5,6,7,8,9)
+console.log(res)
+
+// Замыкание
+// Явление когда из одной функции возвращает другую функцию
+function createMember(name) {
+    return function(lastName) {
+        console.log(name + lastName)
+    }
+}
+
+const logWithLastName = createMember('Кирилл')
+console.log(logWithLastName)
+console.log(logWithLastName('Коротеев'))
+console.log(logWithLastName('Иванов'))
+
+// Урок 7. Массивы
+
