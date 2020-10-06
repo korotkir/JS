@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e3149c5-b33f-42f1-8c54-c915be826a80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/massive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/string.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js1.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js2.js" beforeDir="false" afterPath="$PROJECT_DIR$/int+BigInt_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -40,11 +48,19 @@
       <option name="presentableId" value="Default" />
       <updated>1601891484485</updated>
       <workItem from="1601891486716" duration="5435000" />
-      <workItem from="1601905029615" duration="4936000" />
+      <workItem from="1601905029615" duration="5886000" />
+      <workItem from="1601919510467" duration="2510000" />
+      <workItem from="1601978675622" duration="444000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="149" y="39" key="SettingsEditor" timestamp="1601920700789">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="149" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1601920700789" />
   </component>
 </project>
