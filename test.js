@@ -1,13 +1,25 @@
-let myFirst = [
-    {firstName: 'Kirill', lastName: 'Koroteev', age: 22},
-    {firstName: 'Andrey', lastName: 'Ivanov', age: 19},
-    {firstName: 'Ivan', lastName: 'Petrov', age: 20},
-    {firstName: 'Julia', lastName: 'Sobol', age: 25},
-    {firstName: 'Maria', lastName: 'Kalashnikova', age: 18}
-]
+// http://htmllab.ru/zadachi-po-javascript-base/
 
-// Добавляем нового человека
-// Заменяем 3 человека на нового
-// Удаляем человека
-// Выводим только тех, кто старше 20
+// 1
+// Определите переменные str, num, flag и txt со значениями «Привет», 123, true, «true».
+// При помощи оператора определения типа убедитесь, что переменных принадлежат типам: string, number, boolean.
+
+let str = 'Привет'
+let int = 123
+let bool = true
+let err = 'true'
+
+console.log(typeof str) // string
+console.log(typeof int) // number
+console.log(typeof bool) // boolean
+console.log(typeof err) // string
+
+// 2
+function test() {
+    for (let i = 0; i = 8; i++) {
+        console.log(i)
+    }
+}
+
+test()
 
