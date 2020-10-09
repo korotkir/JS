@@ -26,6 +26,8 @@ function addStyleTo(node, text, background, color, fontSize) {
     node.style.textAlign = 'center' // Выравниваем по горизонтали
     node.style.background = background // Меняем фон
     node.style.padding = '2rem' // Отступ
+    node.style.display = 'block'
+    node.style.width = '100%'
     // If сработает только в том случае, если знчение != falsy
     // falsy == null, undifined, false и т.д
     // Соответсвенно если не указывать данный аргумент функции, сработает значение по умолчанию
@@ -55,7 +57,7 @@ setTimeout(() => {
 }, 3000)
 
 setTimeout(() => {
-    addStyleTo(heading3, 'И все получится', 'green', 'orange', '4rem')
+    addStyleTo(heading3.children[0], 'И все получится', 'green', 'orange', '4rem')
 }, 4000)
 
 // При клику на блок, он будет менять цвет фона:
@@ -67,3 +69,14 @@ heading.onclick = () => {
         heading.style.background = 'yellow'
     }
 }
+
+// Добавляет событие слушатель // 
+// Присутствует два обязательных праметра: 
+// 1. Строка. Название события. 2. Функция
+heading2.addEventListener('dblclick', () => {
+    if (heading2.style.color === 'yellow') {
+        heading2.style.color = 'white'
+    } else {
+        heading2.style.color = 'yellow'
+    } 
+})  
